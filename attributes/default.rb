@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-default['apache']['mpm'] =
+default_unless['apache']['mpm'] =
   case node['platform_family']
   when 'debian'
     case node['platform']
